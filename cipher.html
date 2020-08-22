@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <div id="pickmode">
+        <h1>Encode or decode?</h1>
+        <button id="encodemode" onclick="encodemode()">Encode</button>
+        <button id="decodemode" onclick="decodemode()">Decode</button>
+    </div>
+    <div id="encode" hidden=true>
+        <h1>Encode a message</h1>
+        <input id="encodestr" type="text" placeholder="Message">
+        <br>
+        <input id="mask" type="text" placeholder="Mask">
+        <br>
+        <button id="encodemessage" onclick="encodemessage()">Encode</button>
+    </div>
+    <div id="decode" hidden=true>
+        <h1>Decode a message</h1>
+        <input id="decodestr" type="text" placeholder="Message to decode">
+        <br>
+        <button id="decodemessage" onclick="decodemessage()">Decode</button>
+    </div>
+    <p id="output"></p>
+    <script type="text/javascript" src="cipher.js"></script>
+</html>
